@@ -299,3 +299,112 @@ h1{
   .metric{ grid-column: span 12; }
   .two-col{ grid-template-columns: 1fr; }
 }
+
+/* ===== Premium Swiss enhancements ===== */
+
+/* Keep accents disciplined: primary (blue) for actions, yellow only for tiny highlights, red reserved for errors */
+
+a:hover{
+  text-decoration-color: rgba(0,64,146,.35);
+}
+
+a:focus-visible,
+button:focus-visible{
+  outline: 3px solid rgba(0,64,146,.22);
+  outline-offset: 2px;
+  border-radius: 10px;
+}
+
+.nav-links a:hover{
+  background: rgba(0,64,146,.04);
+  text-decoration: none;
+}
+
+.btn.primary:hover{
+  box-shadow: 0 10px 22px rgba(0,64,146,.14);
+}
+
+/* Hero layout with portrait */
+.hero-grid{
+  display:grid;
+  grid-template-columns: 1fr 240px;
+  gap: 24px;
+  align-items: start;
+}
+.avatar{
+  width: 240px;
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  object-fit: cover;
+  display:block;
+}
+.avatar-wrap{
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+  align-items:flex-start;
+}
+.avatar-caption{
+  font-size: var(--small);
+  color: var(--muted);
+}
+
+/* Clickable card affordance (esp. mobile) */
+.card-link{
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.card-link:hover h3{
+  text-decoration: underline;
+  text-decoration-color: rgba(0,64,146,.35);
+}
+
+@media (hover: none){
+  .card-link h3{
+    text-decoration: underline;
+    text-decoration-color: rgba(0,64,146,.25);
+    text-underline-offset: 3px;
+  }
+  .card-link::after{
+    content: "→";
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    color: rgba(0,64,146,.55);
+    font-weight: 800;
+  }
+}
+
+/* Work dividers */
+.divider{
+  grid-column: span 12;
+  display:flex;
+  align-items:center;
+  gap: 12px;
+  margin: 18px 0 4px;
+  color: var(--muted);
+  font-size: var(--small);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.divider::after{
+  content: "";
+  flex: 1;
+  border-top: 1px solid var(--border);
+}
+
+/* Blog post heading */
+.post-meta{
+  font-size: var(--small);
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+@media (max-width: 820px){
+  .hero-grid{ grid-template-columns: 1fr; }
+  .avatar{ width: 180px; }
+}
