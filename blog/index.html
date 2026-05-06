@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog — Farhan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand"><span class="mark"></span> Farhan</div>
+      <nav class="nav-links">
+        <a class="" href="/">Home</a><a class="" href="/work/">Work</a><a class="" href="/about/">About</a><a class="active" href="/blog/">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section tight">
+      <h1>Blog</h1>
+      <p class="lead">Short notes on UX, experiments, and product thinking.</p>
+    </section>
+
+    <div class="hr"></div>
+
+    <section class="section">
+      <div class="grid">
+        <a class="card card-link span-12" href="/blog/posts/hello/">
+          <h3>Hello (starter post)</h3>
+          <p>Why I keep a blog: clarity, learning, and documenting decision frameworks.</p>
+          <div class="meta"><span class="pill">2026</span><span class="pill">Meta</span></div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="y"></span> Farhan</div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
