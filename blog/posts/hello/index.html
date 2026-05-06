@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hello — Blog — Farhan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand"><span class="mark"></span> Farhan</div>
+      <nav class="nav-links">
+        <a class="" href="/">Home</a><a class="" href="/work/">Work</a><a class="" href="/about/">About</a><a class="active" href="/blog/">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="cover">
+      <div class="kicker"><span class="dot"></span> Blog post</div>
+      <div class="title-row">
+        <div>
+          <h1>Hello</h1>
+          <p class="subtitle">A tiny starter post to validate the blog structure on a static GitHub Pages site.</p>
+          <div class="post-meta">2026 • 2 min read</div>
+        </div>
+        <div class="cta-row"><a class="btn primary" href="/blog/">Back to blog →</a></div>
+      </div>
+    </section>
+
+    <div class="hr"></div>
+
+    <section class="section">
+      <article class="prose">
+        <h2>Why a blog</h2>
+        <p>
+          I use a blog as a low-friction way to document decision frameworks, learnings, and small UX insights.
+          It also helps me write more clearly—without turning everything into a slide deck.
+        </p>
+
+        <h2>How this site handles blog posts</h2>
+        <ul>
+          <li>Each post is a simple HTML page under <code>/blog/posts/&lt;slug&gt;/</code>.</li>
+          <li>No backend, no database—works perfectly on GitHub Pages.</li>
+          <li>Later, we can add an index generator or migrate to Jekyll if you want true CMS-like posting.</li>
+        </ul>
+
+        <div class="hr-soft"></div>
+        <p><a class="btn" href="/blog/">← Back to Blog</a></p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="y"></span> Farhan</div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
