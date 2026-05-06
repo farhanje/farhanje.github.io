@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Farhan — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand"><span class="mark"></span> Farhan</div>
+      <nav class="nav-links">
+        <a class="active" href="/">Home</a><a class="" href="/work/">Work</a><a class="" href="/about/">About</a><a class="" href="/playground/">Playground</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section tight">
+      <div class="kicker"><span class="dot"></span> UI/UX • research-driven • metrics-minded</div>
+      <h1>Designing clear flows, strong systems, and measurable outcomes.</h1>
+      <p class="lead">
+        Portfolio hosted on GitHub Pages. Case studies focus on experimentation, identity verification, and product discovery at AstraPay.
+      </p>
+      <div class="cta-row">
+        <a class="btn primary" href="/work/">See selected work →</a>
+        <a class="btn ghost" href="/playground/">Check the UI →</a>
+      </div>
+    </section>
+
+    <div class="hr"></div>
+
+    <section class="section">
+      <div class="grid">
+        <div class="span-12"><h2 class="page-title">Selected work</h2></div>
+
+        <a class="card span-6" href="/work/kyc-homepage-copy-ab/">
+          <h3>Production A/B Test: KYC Homepage Copy</h3>
+          <p>Copy-only experiment on a production homepage to move KYC start and submit.</p>
+          <div class="meta"><span class="pill">Experiment</span><span class="pill">Quant</span><span class="pill">Stats</span></div>
+        </a>
+
+        <a class="card span-6" href="/work/kyc-autosave-usability-ab/">
+          <h3>KYC Autosave Flow Experiment</h3>
+          <p>Usability A/B: Seamless vs Review-first (autosave-centric) navigation.</p>
+          <div class="meta"><span class="pill">Usability</span><span class="pill">A/B</span><span class="pill">Quant + Qual</span></div>
+        </a>
+
+        <a class="card span-6" href="/work/ocr-sim-ktp-ai/">
+          <h3>OCR Evaluation for SIM & KTP</h3>
+          <p>Reduced OCR cost per hit while lowering user corrections and expanding doc coverage.</p>
+          <div class="meta"><span class="pill">AI</span><span class="pill">Verification</span><span class="pill">Cost</span></div>
+        </a>
+
+        <a class="card span-6" href="/work/astrapay-tabungan-discovery/">
+          <h3>Product Discovery: AstraPay Tabungan</h3>
+          <p>Strategic research resolving a product fork: separated saving pocket vs merged wallet balance.</p>
+          <div class="meta"><span class="pill">Discovery</span><span class="pill">Qual</span><span class="pill">Strategy</span></div>
+        </a>
+
+        <div class="card span-4"><h3>What I’m strong at</h3><p>Structured thinking, clean systems, decision-grade storytelling.</p></div>
+        <div class="card span-4"><h3>How I work</h3><p>Clarify problem → define metrics → test → ship → monitor.</p></div>
+        <div class="card span-4"><h3>Next</h3><p>Add 1–2 visuals per case study (only where it improves clarity).</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="y"></span> Farhan</div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>

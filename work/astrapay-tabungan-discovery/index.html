@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product Discovery: AstraPay Tabungan — Farhan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand"><span class="mark"></span> Farhan</div>
+      <nav class="nav-links">
+        <a class="" href="/">Home</a><a class="active" href="/work/">Work</a><a class="" href="/about/">About</a><a class="" href="/playground/">Playground</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="cover">
+      <div class="kicker"><span class="dot"></span> Full case study</div>
+      <div class="title-row">
+        <div>
+          <h1>Product Discovery: AstraPay Tabungan</h1>
+          <p class="subtitle">Research-led direction setting: design “saving” inside an e-wallet when users frame e-wallets as spending tools.</p>
+        </div>
+        <div class="cta-row"><a class="btn primary" href="/work/">Back to work →</a></div>
+      </div>
+
+      <div class="grid facts">
+        <div class="card span-4 fact"><div class="label">Company</div><div class="value">AstraPay</div><div class="label">Role</div><div class="value mono">Designer / Researcher</div></div>
+        <div class="card span-4 fact"><div class="label">Participants</div><div class="value">14 interviews</div><div class="label">Period</div><div class="value mono">Dec 2025 – Jan 2026</div></div>
+        <div class="card span-4 fact"><div class="label">Outcome</div><div class="value">Resolved product fork</div><div class="label">Focus</div><div class="value mono">Mental models</div></div>
+      </div>
+
+      <div class="metrics">
+        <div class="metric"><div class="k">Core finding</div><div class="v">“Pay”, not “Save”</div><div class="d">E-wallet tabungan rarely becomes primary savings</div></div>
+        <div class="metric"><div class="k">Principle</div><div class="v">Separation wins</div><div class="d">Saving feels real only with boundaries</div></div>
+        <div class="metric"><div class="k">Decision</div><div class="v">Separated vs merged</div><div class="d">Dedicated pocket vs single balance with perks</div></div>
+      </div>
+    </section>
+
+    <div class="hr"></div>
+
+    <section class="section">
+      <div class="case-grid">
+        <article class="prose">
+          <h2 id="tl-dr">TL;DR</h2>
+          <div class="callout">
+            <b>Mismatch:</b> users treat e-wallet balances as spendable. “Tabungan” inside an e-wallet won’t create saving behavior by default.
+            <br><b>Recommendation:</b> build a separated saving pocket (clear boundaries), not a merged wallet balance with perks.
+          </div>
+
+          <h2 id="tension">The tension</h2>
+          <p>
+            Shipping a “Tabungan” that behaves like a wallet balance can drive activation but still fail to create real saving intent.
+            Users see e-wallets as payment tools; savings features become “wallet with benefits,” not a true saving product.
+          </p>
+
+          <h2 id="evidence">Key evidence</h2>
+          <ul>
+            <li>Users organize money by purpose (mental accounting); saving needs separation.</li>
+            <li>Interest is “nice to have,” not the main driver; trust and control matter more.</li>
+            <li>The payday relocation moment matters: users move funds quickly to a monthly “control center.”</li>
+          </ul>
+
+          <h2 id="framework">Decision framework</h2>
+          <div class="callout"><b>The product fork:</b> balance structure and naming determine whether users perceive this as saving vs spending.</div>
+
+          <div class="two-col">
+            <div class="card">
+              <h3>Separated Saving Model (Recommended)</h3>
+              <p><strong>User perception:</strong> “Real saving” (bank-like boundary)</p>
+              <p><strong>Behavior effect:</strong> protects money from accidental spending</p>
+              <p><strong>Moves:</strong> dedicated pocket + labels + rules</p>
+              <p><strong>Trade-off:</strong> slightly more friction to move funds</p>
+            </div>
+            <div class="card">
+              <h3>Merged Balance Model</h3>
+              <p><strong>User perception:</strong> “Wallet with perks”</p>
+              <p><strong>Behavior effect:</strong> money stays spendable; saving stays shallow</p>
+              <p><strong>Moves:</strong> same balance + interest/benefits overlay</p>
+              <p><strong>Trade-off:</strong> adoption can be high, but saving intent stays weak</p>
+            </div>
+          </div>
+
+          <h2 id="recommendation">Recommendation</h2>
+          <div class="callout">
+            <b>Recommendation:</b> design AstraPay Tabungan as a separated saving experience (pocket + boundaries),
+            and compete at fund relocation after payday (free transfers + allocation cues).
+          </div>
+
+          <h2 id="learnings">Learnings</h2>
+          <ul>
+            <li>“Tabungan” isn’t a label problem. It’s a boundary problem.</li>
+            <li>Adoption is ecosystem-driven; saving requires structure + trust cues.</li>
+            <li>Good discovery resolves forks with explicit trade-offs.</li>
+          </ul>
+
+          <div class="hr-soft"></div>
+          <p><a class="btn" href="/work/">← Back to Work</a></p>
+        </article>
+
+        <aside class="sidebar card">
+          <h3>Contents</h3>
+          <nav class="toc">
+            <a href="#tl-dr">TL;DR</a>
+            <a href="#tension">The tension</a>
+            <a href="#evidence">Key evidence</a>
+            <a href="#framework">Decision framework</a>
+            <a href="#recommendation">Recommendation</a>
+            <a href="#learnings">Learnings</a>
+          </nav>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <script src="/assets/js/toc.js"></script>
+
+  <footer class="footer">
+    <div class="container">© <span id="y"></span> Farhan</div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>

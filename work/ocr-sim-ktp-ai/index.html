@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OCR Evaluation for SIM & KTP — Farhan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand"><span class="mark"></span> Farhan</div>
+      <nav class="nav-links">
+        <a class="" href="/">Home</a><a class="active" href="/work/">Work</a><a class="" href="/about/">About</a><a class="" href="/playground/">Playground</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="cover">
+      <div class="kicker"><span class="dot"></span> Full case study</div>
+      <div class="title-row">
+        <div>
+          <h1>OCR Evaluation for SIM & KTP (Vertex vs AdvanceAI)</h1>
+          <p class="subtitle">Reduced OCR cost per hit while lowering user correction effort and expanding document coverage.</p>
+        </div>
+        <div class="cta-row"><a class="btn primary" href="/work/">Back to work →</a></div>
+      </div>
+
+      <div class="grid facts">
+        <div class="card span-4 fact"><div class="label">Company</div><div class="value">AstraPay</div><div class="label">Role</div><div class="value mono">Designer / Researcher</div></div>
+        <div class="card span-4 fact"><div class="label">Docs</div><div class="value">SIM • KTP</div><div class="label">Primary metric</div><div class="value mono">Edit rate</div></div>
+        <div class="card span-4 fact"><div class="label">Decision axes</div><div class="value">Quality • Cost • Coverage</div><div class="label">Stability</div><div class="value mono">Monitoring plan</div></div>
+      </div>
+
+      <div class="metrics">
+        <div class="metric"><div class="k">Cost per hit</div><div class="v">Rp120 → ~Rp18</div><div class="d">~85% cheaper (≈6.7×)</div></div>
+        <div class="metric"><div class="k">Edit rate</div><div class="v">42.58% → 32.75%</div><div class="d">-9.83pp (≈23% fewer edits)</div></div>
+        <div class="metric"><div class="k">Coverage</div><div class="v">KTP → KTP + SIM</div><div class="d">Plus supporting docs capability</div></div>
+      </div>
+    </section>
+
+    <div class="hr"></div>
+
+    <section class="section">
+      <div class="case-grid">
+        <article class="prose">
+          <h2 id="context">Context</h2>
+          <p>OCR pre-fills identity fields in KYC. Its quality directly affects user effort (manual corrections) and completion reliability.</p>
+
+          <h2 id="problem">Problem</h2>
+          <ul>
+            <li>Existing OCR was expensive at scale (~Rp120/hit).</li>
+            <li>Users often had to correct extracted fields (high edit rate).</li>
+            <li>SIM coverage was a critical gap.</li>
+          </ul>
+
+          <h2 id="approach">Approach</h2>
+          <div class="callout"><b>Edit rate:</b> % of extracted fields that users edited before submission. Lower is better (less friction).</div>
+          <p>I benchmarked options across <strong>quality</strong> (edit rate), <strong>cost</strong> (Rp/hit), and <strong>coverage</strong> (SIM/KTP support).</p>
+
+          <h2 id="evidence">Evidence</h2>
+          <figure class="figure">
+            <img src="/assets/img/ocr-vertex-vs-advanceai.svg" alt="OCR benchmark placeholder">
+            <figcaption>Replace this placeholder with your slide image export (PNG/JPG), or keep it if you want text-only.</figcaption>
+          </figure>
+
+          <h2 id="decision">Decision</h2>
+          <p>We chose Vertex AI as the primary OCR engine because it was significantly cheaper, reduced correction effort, and enabled SIM coverage.</p>
+
+          <h2 id="monitoring">Monitoring plan</h2>
+          <ul>
+            <li>Edit rate trend (overall and per-field)</li>
+            <li>Failure/timeout rate and latency distribution</li>
+            <li>Downstream KYC completion changes after rollout</li>
+          </ul>
+
+          <h2 id="learnings">Learnings</h2>
+          <ul>
+            <li>OCR “quality” should be measured in user correction cost, not vendor claims.</li>
+            <li>Cheaper + better needs monitoring so it stays true in production.</li>
+          </ul>
+
+          <div class="hr-soft"></div>
+          <p><a class="btn" href="/work/">← Back to Work</a></p>
+        </article>
+
+        <aside class="sidebar card">
+          <h3>Contents</h3>
+          <nav class="toc">
+            <a href="#context">Context</a>
+            <a href="#problem">Problem</a>
+            <a href="#approach">Approach</a>
+            <a href="#evidence">Evidence</a>
+            <a href="#decision">Decision</a>
+            <a href="#monitoring">Monitoring plan</a>
+            <a href="#learnings">Learnings</a>
+          </nav>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <script src="/assets/js/toc.js"></script>
+
+  <footer class="footer">
+    <div class="container">© <span id="y"></span> Farhan</div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>

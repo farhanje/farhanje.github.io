@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Production A/B Test: KYC Homepage Copy — Farhan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand"><span class="mark"></span> Farhan</div>
+      <nav class="nav-links">
+        <a class="" href="/">Home</a><a class="active" href="/work/">Work</a><a class="" href="/about/">About</a><a class="" href="/playground/">Playground</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="cover">
+      <div class="kicker"><span class="dot"></span> Full case study</div>
+      <div class="title-row">
+        <div>
+          <h1>Production A/B Test: KYC Homepage Copy</h1>
+          <p class="subtitle">A designer-led experiment on AstraPay’s production homepage to improve KYC conversion by changing copy only.</p>
+        </div>
+        <div class="cta-row"><a class="btn primary" href="/work/">Back to work →</a></div>
+      </div>
+
+      <div class="grid facts">
+        <div class="card span-4 fact"><div class="label">Company</div><div class="value">AstraPay</div><div class="label">Role</div><div class="value mono">Designer / Researcher</div></div>
+        <div class="card span-4 fact"><div class="label">Period</div><div class="value">Sep–Oct 2025</div><div class="label">Change</div><div class="value mono">Copy only</div></div>
+        <div class="card span-4 fact"><div class="label">Method</div><div class="value">A/B/C test</div><div class="label">Readout</div><div class="value mono">Stat-backed decision</div></div>
+      </div>
+
+      <div class="metrics">
+        <div class="metric"><div class="k">Primary</div><div class="v">Start KYC</div><div class="d">Entry-to-landing conversion</div></div>
+        <div class="metric"><div class="k">Finding</div><div class="v">Variant C strongest</div><div class="d">Best at triggering start</div></div>
+        <div class="metric"><div class="k">Decision</div><div class="v">Ship C or B</div><div class="d">C = volume, B = efficiency</div></div>
+      </div>
+    </section>
+
+    <div class="hr"></div>
+
+    <section class="section">
+      <div class="case-grid">
+        <article class="prose">
+          <h2 id="context">Context</h2>
+          <p>Homepage KYC copy had become stale. We ran a short production test to find messaging that improves KYC start and submit.</p>
+
+          <h2 id="variants">Variants</h2>
+          <div class="two-col">
+            <div class="card"><h3>A — Feature Highlight</h3><p>“Mau Transfer & Tarik Tunai? → Upgrade & nikmati akses ke semua fitur!”</p></div>
+            <div class="card"><h3>B — General Highlight</h3><p>“Akses Fitur Masih Terbatas? → Upgrade yuk, biar bisa transfer & tarik tunai!”</p></div>
+            <div class="card"><h3>C — Monetary Highlight</h3><p>“Mau Voucher Senilai 100rb? → Cukup upgrade akun, super cepat!”</p></div>
+            <div class="card"><h3>As-is (Legacy)</h3><p>“Dapatkan Bonus 2x Lipat → Cukup upgrade akunmu, super mudah.”</p></div>
+          </div>
+
+          <h2 id="method">Method</h2>
+          <ul>
+            <li>Random assignment for A/B/C variants</li>
+            <li>Funnel analysis with unique users per step</li>
+            <li>Stat testing to support ship decision</li>
+          </ul>
+
+          <h2 id="results">Results</h2>
+          <div class="callout"><b>Summary:</b> All new variants beat legacy copy. Variant C was strongest to trigger Start KYC; submit rates among A/B/C were close.</div>
+
+          <h2 id="decision">Decision</h2>
+          <ul>
+            <li><strong>Ship C</strong> if goal is maximum volume.</li>
+            <li><strong>Ship B</strong> if goal is efficiency without voucher promise.</li>
+            <li>Retire as-is.</li>
+          </ul>
+
+          <h2 id="learnings">Learnings</h2>
+          <ul>
+            <li>Entry copy can move the funnel meaningfully without UI changes.</li>
+            <li>Separate “volume” vs “efficiency” decisions to avoid stakeholder confusion.</li>
+          </ul>
+
+          <div class="hr-soft"></div>
+          <p><a class="btn" href="/work/">← Back to Work</a></p>
+        </article>
+
+        <aside class="sidebar card">
+          <h3>Contents</h3>
+          <nav class="toc">
+            <a href="#context">Context</a>
+            <a href="#variants">Variants</a>
+            <a href="#method">Method</a>
+            <a href="#results">Results</a>
+            <a href="#decision">Decision</a>
+            <a href="#learnings">Learnings</a>
+          </nav>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <script src="/assets/js/toc.js"></script>
+
+  <footer class="footer">
+    <div class="container">© <span id="y"></span> Farhan</div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Work — Farhan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand"><span class="mark"></span> Farhan</div>
+      <nav class="nav-links">
+        <a class="" href="/">Home</a><a class="active" href="/work/">Work</a><a class="" href="/about/">About</a><a class="" href="/playground/">Playground</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section tight">
+      <h1>Work</h1>
+      <p class="lead">A small set of deep case studies. Built for clarity, not decoration.</p>
+    </section>
+
+    <div class="hr"></div>
+
+    <section class="section">
+      <div class="grid">
+        <a class="card span-6" href="/work/kyc-homepage-copy-ab/">
+          <h3>Production A/B Test: KYC Homepage Copy</h3>
+          <p>Copy-only experiment to improve KYC start and submit.</p>
+          <div class="meta"><span class="pill">Experiment</span><span class="pill">Quant</span><span class="pill">Stats</span></div>
+        </a>
+
+        <a class="card span-6" href="/work/kyc-autosave-usability-ab/">
+          <h3>KYC Autosave Flow Experiment</h3>
+          <p>Unmoderated usability A/B: Seamless vs Review-first navigation.</p>
+          <div class="meta"><span class="pill">Usability</span><span class="pill">A/B</span><span class="pill">Quant + Qual</span></div>
+        </a>
+
+        <a class="card span-6" href="/work/ocr-sim-ktp-ai/">
+          <h3>OCR Evaluation for SIM & KTP</h3>
+          <p>Vertex vs AdvanceAI: cost, correction effort, and doc coverage.</p>
+          <div class="meta"><span class="pill">AI</span><span class="pill">KYC</span><span class="pill">Benchmark</span></div>
+        </a>
+
+        <a class="card span-6" href="/work/astrapay-tabungan-discovery/">
+          <h3>Product Discovery: AstraPay Tabungan</h3>
+          <p>Research-led positioning to match users’ saving vs spending mental models.</p>
+          <div class="meta"><span class="pill">Discovery</span><span class="pill">Qual</span><span class="pill">Strategy</span></div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="y"></span> Farhan</div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>

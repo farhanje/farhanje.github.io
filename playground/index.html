@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Playground — Portfolio UI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand"><span class="mark"></span> Farhan</div>
+      <nav class="nav-links">
+        <a class="" href="/">Home</a><a class="" href="/work/">Work</a><a class="" href="/about/">About</a><a class="active" href="/playground/">Playground</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section tight">
+      <div class="kicker"><span class="dot"></span> Visual check</div>
+      <h1>Typography, spacing, cards, buttons</h1>
+      <p class="lead">If this page feels clean, the whole site will feel clean.</p>
+
+      <div class="cta-row">
+        <a class="btn primary" href="#" onclick="return false;">Primary</a>
+        <a class="btn" href="#" onclick="return false;">Default</a>
+        <a class="btn ghost" href="#" onclick="return false;">Ghost</a>
+      </div>
+    </section>
+
+    <div class="hr"></div>
+
+    <section class="section">
+      <div class="grid">
+        <div class="card span-4">
+          <h3>Card title</h3>
+          <p>Muted supporting text. This is where summaries go.</p>
+          <div class="meta"><span class="pill">Experiment</span><span class="pill">Quant</span></div>
+        </div>
+
+        <div class="card span-4">
+          <h3>Callout example</h3>
+          <p>Use callouts to highlight decisions, not to dump content.</p>
+          <div class="callout"><b>Decision:</b> Ship the variant with the best start KYC lift.</div>
+        </div>
+
+        <div class="card span-4">
+          <h3>System feel</h3>
+          <p>Swiss: structured, calm, readable. No visual noise.</p>
+        </div>
+
+        <div class="card span-12">
+          <h3>Body text check</h3>
+          <p>
+            This is how long paragraphs render. If it feels too wide, we tighten prose width.
+            If it feels too “thin”, we increase contrast of muted text.
+          </p>
+          <ul><li>Bullet one</li><li>Bullet two</li><li>Bullet three</li></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="y"></span> Farhan</div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
