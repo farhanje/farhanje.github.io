@@ -1,0 +1,25 @@
+backend:
+  name: github
+  repo: farhanje/farhanje.github.io
+  branch: main
+  # We'll fill these after you create the GitHub OAuth App + Cloudflare worker/proxy
+  base_url: https://YOUR_OAUTH_PROXY_DOMAIN
+  auth_endpoint: /auth
+
+publish_mode: editorial_workflow
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}} ({{date}})"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
